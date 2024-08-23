@@ -1,0 +1,73 @@
+Menyisipkan Kode Javascript didalam Halaman HTML.
+Gunakan tags <script> {Code Javascript } </script> untuk menyisipkan kode Javascript didalam HTML.
+Contoh menyisipkan kode Javascript didalam halaman html:
+    <script>
+        document.getElementById('paragraph').innerHTML('Hello World.');
+    </script>
+
+Menyisipkan Kode Javascript diantara Tag <head> atau Tag <body>
+Kamu juga bisa menyisipkan kode Javascript diantara tag <head> dan tag <body> atau didalam keduanya.
+Contoh menyisipkan kode javascript didalam tag <head>:
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript code in Tag Head</title>
+        <script>
+            function showText() {
+                document.getElementById('text').innerHTML = 'Some paragraph from script in tag head';
+            }
+        </script>
+    </head>
+    <body>
+        <p id="text"></p>
+        <button type="button" onclick="showText()">Show Text</button>
+    </body>
+    </html>
+
+Contoh menyisipkan kode javascript didalam tag <body>:
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript code in Tag Body</title>
+    </head>
+    <body>
+        <p id="text-body"></p>
+        <button type="button" onclick="showText()">Show Text</button>
+        <script>
+            function showText() {
+                document.getElementById('text-body').innerHTML = 'Some text from script in tag body';
+            }
+        </script>
+    </body>
+    </html>
+
+Contoh menyisipkan kode javascript didalam tag head dan tag body
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Code in tag Head and tag Body</title>
+        <script>
+            function showParagraph() {
+                document.getElementById('paragraph').innerHTML = 'Show some paragrapah from script in head';
+            }
+        </script>
+    </head>
+    <body>
+        <p id="paragraph"></p>
+        <button type="button" onclick="showParagraph()">Show Paragraph</button>
+        <h1 id="header"></h1>
+        <button type="button" onclick="showHeader()">Show Header</button>
+        <script>
+            function showHeader() {
+                document.getElementById("header").innerHTML = 'Show header from script in body';
+            }
+        </script>
+    </body>
+    </html>
+
