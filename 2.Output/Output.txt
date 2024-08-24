@@ -1,0 +1,19 @@
+Javascript Output / Keluaran Javascript
+
+Javascript dapat 'menampilkan' data dengan 4 cara:
+1. Menulis kedalam elemen HTML, menggunakan innerHTML.
+2. Menulis ke keluaran HTML menggunakan document.write().
+3. Menulis kedalam alert box menggunakan window.alert().
+4. Menulis ke console browser, menggunakan console.log().
+
+1. innerHTML:
+Sebuah properti untuk mendefinisikan konten HTML
+
+2. document.write()
+Method untuk mereplace seluruh konten halaman
+
+3. window.alert()
+Method untuk menampilkan data dengan sebuah kotak peringatan
+
+4. console.log()
+Method untuk menampilkan data di console browser
