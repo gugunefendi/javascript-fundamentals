@@ -1,4 +1,4 @@
-# javascript-fundamentals
+# javascript-fundamentals-Indonesia
 
 Assalamualaikum gaes!
 Ini adalah repository Javascript Fundamentals Bahasa Indonesia.
@@ -17,8 +17,5 @@ Biar kita orang Indo mudah cernanya, karena artikel tentang Javascript yang ber-
 Jadi gw buat sendiri aja.
 
 Semoga repo ini dapat menambah ilmu gw tentang Javascript dan jika berguna buat orang lain syukur alhamdulillah, biar bisa beramal jariyah.
-
-Oya Pelajaran ke 1 udah gw push ya, judulnya "Where To".
-Pelajaran tentang menyisipkan kode Javascript didalam halaman HTML.
 
 Thank you, Wassalamualaikum wr.wb.
