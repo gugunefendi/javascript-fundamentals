@@ -8,3 +8,35 @@
         <p id="test"></p>
     </body>
 </html>
+
+<html>
+    <head>
+        <!-- Use defer property to make sure javascript execute after HTML is loaded. -->
+        <script src='script.js'defer></script>
+    </head>
+    <body>
+        <p id="someText"></p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <!-- Use external script file if you want reuse code in multiple pages. -->
+        <script src='js/script.js'defer></script>
+    </head>
+    <body>
+        <p id="someTextTwo"></p>
+    </body>
+</html>
+
+<html>
+    <head>
+        <!-- Use async property javascript will be executed as soon after downloaded.NOT executed in order. -->
+        <script src='js/script.js'async></script>
+    </head>
+    <body>
+        <p id="someTextTwo"></p>
+    </body>
+</html>
+
+
