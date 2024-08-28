@@ -1,0 +1,59 @@
+<!-- 
+Cara menampilkan data dengan JavaScript:
+1. console.log() // menampilkan data ke console browser
+2. alert() // menampilkan data ke layar pop-up
+3. document.write() // menampilkan data ke dalam dokumen HTML. document.write() akan menghapus semua konten yang ada di dalam dokumen HTML.
+4. innerHTML // menampilkan data ke dalam elemen HTML
+5. textContent // menampilkan data ke dalam elemen HTML tanpa memformat HTML
+6. console.table() // menampilkan data dalam format tabel di console browser
+7. prompt() // menampilkan kotak dialog input untuk mendapatkan data dari pengguna
+8. DOM manipulation // mengubah isi elemen HTML menggunakan metode seperti innerHTML atau textContent
+9. Pustaka/Framework // menampilkan data melalui komponen atau pustaka UI (mis. React, Vue.js, Angular)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Display Examples</title>
+</head>
+<body>
+    <h1 id="myElement">Hello, world!</h1>
+
+    <script>
+        // 1. console.log()
+        console.log("Hello, world! This is console.log.");
+
+        // 2. alert()
+        alert("Hello, world! This is an alert.");
+
+        // 3. document.write()
+        // document.write("Hello, world! This is document.write().");
+
+        // 4. innerHTML (dapat dimasukkan element HTML)
+        document.getElementById("myElement").innerHTML = "<p><b>Hello</b> <i>World</i></p>";
+
+        // 5. textContent (untuk menampilkan string saja)
+        document.getElementById("myElement").textContent = "<p><b>Hello</b> <i>World</i></p>";
+
+        // 6. console.table()
+        console.table([{name: "John", age: 30}, {name: "Jane", age: 25}]);
+
+        // 7. prompt()
+        var userInput = prompt("Please enter your name:");
+        console.log("User entered:", userInput);
+
+        // 8. DOM manipulation (same as innerHTML and textContent examples above)
+        // This is already covered in innerHTML and textContent examples.
+
+        // 9. Pustaka/Framework (React example)
+        // Uncomment the following code if you are using a React environment.
+
+        // function App() {
+        //     return <h1>Hello, world! This is React.</h1>;
+        // }
+        // export default App;
+    </script>
+</body>
+</html>
