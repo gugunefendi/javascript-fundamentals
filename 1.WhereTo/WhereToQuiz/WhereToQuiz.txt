@@ -1,0 +1,91 @@
+// Bahasa Indonesia
+Berikut adalah beberapa pertanyaan kuis mengenai penempatan kode JavaScript:
+
+### Quiz: Penempatan Kode JavaScript
+
+1. **Pertanyaan:**
+   Di mana tempat terbaik untuk meletakkan tag `<script>` jika Anda ingin memastikan bahwa elemen-elemen HTML telah dimuat sepenuhnya sebelum JavaScript dijalankan?
+   
+   a. Di dalam tag `<head>`  
+   b. Di awal tag `<body>`  
+   c. Di akhir tag `<body>`  
+   d. Di luar tag `<html>`
+
+2. **Pertanyaan:**
+   Apa efeknya jika Anda menempatkan tag `<script>` di dalam tag `<head>` tanpa menggunakan atribut `defer` atau `async`?
+
+   a. JavaScript akan dieksekusi setelah semua elemen HTML dimuat.  
+   b. JavaScript akan dieksekusi sebelum elemen HTML dimuat.  
+   c. JavaScript tidak akan dieksekusi sama sekali.  
+   d. JavaScript akan dijalankan secara bersamaan dengan pemuatan HTML.
+
+3. **Pertanyaan:**
+   Apa yang terjadi jika Anda menggunakan atribut `defer` dalam tag `<script>` yang ditempatkan di dalam `<head>`?
+
+   a. Script akan diunduh dan dieksekusi segera.  
+   b. Script akan diunduh secara paralel dan dieksekusi setelah seluruh dokumen HTML selesai dimuat.  
+   c. Script akan diunduh setelah semua elemen HTML dimuat.  
+   d. Script akan diabaikan oleh browser.
+
+4. **Pertanyaan:**
+   Kapan Anda harus mempertimbangkan untuk menempatkan kode JavaScript secara eksternal menggunakan file `.js` dibandingkan dengan menulisnya langsung di dalam file HTML?
+
+   a. Jika kode JavaScript sangat singkat.  
+   b. Jika Anda ingin menggunakan kembali kode tersebut di beberapa halaman.  
+   c. Jika Anda tidak ingin membagi kode antara file HTML dan JavaScript.  
+   d. Jika Anda ingin memastikan kode JavaScript diunduh secara paralel dengan HTML.
+
+5. **Pertanyaan:**
+   Manakah dari pernyataan berikut ini yang **tidak** benar mengenai penempatan kode JavaScript?
+
+   a. Menempatkan kode JavaScript di akhir tag `<body>` dapat meningkatkan performa loading halaman.  
+   b. Menempatkan semua JavaScript di dalam tag `<head>` dapat memperlambat rendering halaman.  
+   c. Menggunakan atribut `async` akan memastikan script diunduh dan dieksekusi secara berurutan.  
+   d. Anda dapat menempatkan JavaScript langsung di dalam file HTML atau menghubungkannya melalui file eksternal.
+
+### Jawaban:
+1. c. Di akhir tag `<body>`
+2. b. JavaScript akan dieksekusi sebelum elemen HTML dimuat.
+3. b. Script akan diunduh secara paralel dan dieksekusi setelah seluruh dokumen HTML selesai dimuat.
+4. b. Jika Anda ingin menggunakan kembali kode tersebut di beberapa halaman.
+5. c. Menggunakan atribut `async` akan memastikan script diunduh dan dieksekusi secara berurutan. ( Ini salah; `async` mengunduh dan mengeksekusi skrip segera setelah diunduh, yang mungkin tidak dalam urutan yang sama seperti di dalam file HTML).
+
+
+
+// Engslish
+1. Where is the best place to insert <script> tag if you want make sure that HTML elements are loaded before javascript executed?
+    a. in tag <head>
+    b. start of the <body> tag
+    c. end of the <body> tag
+    d. out of <html> tag
+
+2. What is the effect if you insert <script> tag in <head> tag with out use 'defer' or 'asnyc' attribute?
+    a. Javascript will excecute after HTML elements loaded
+    b. Javascript will execute before HTML elements loaded
+    c. Javascript will not execute
+    d. Javascript will execute same time with HTML elements loaded
+
+3. What is happen if you use 'defer' attribute in <script> tag that insert in <head> tag?
+    a. script will download and execute soon
+    b. script will download that pararel and execute after HTML document loaded
+    c. script will download after all HTML elements loaded
+    d. script will note execute by browser
+
+4. When should you consider to puts javascript code externally use file '.js' compare to write it in HTML file?
+    a. if Javascript code is short
+    b. if you want to reuse the code in multiple pages
+    c. if you want to keep your HTML and JavaScript code separate for better organization and maintainability
+    d. All of the above
+
+5. Which of the following statements is NOT true about where to place JavaScript code?
+    a. Placing JavaScript code at the end of the <body> tag can improve page loading performance.
+    b. Placing all JavaScript code inside the <head> tag without defer or async can delay the rendering of the page.
+    c. Using the async attribute will ensure that scripts are downloaded and executed in the order they appear in the HTML file.
+    d. JavaScript can be placed directly inside an HTML file or linked externally using a .js file.
+
+Answer:
+1. in the end of the <body> tag
+2. JavaScript will execute before HTML elements loaded
+3. script will download that pararel and execute after HTML document loaded
+4. if you want to reuse the code in multiple pages
+5. Placing JavaScript code at the end of the <body> tag can improve page loading performance.
