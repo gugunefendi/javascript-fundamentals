@@ -1,0 +1,52 @@
+<!-- 
+    Javascript can insert in HTML use 3 ways:
+    1. insert in tag head
+    2. insert in tag body
+    3. or insert in both
+
+    Notes:
+    1. use event DOMContentLoaded if you call element HTML from tag head
+    2. use async or prefer if you use external script and insert in tag head
+ -->
+
+ <html>
+    <head>
+
+        <!-- start insert javascript in tag head -->
+        <script>
+            // add event DOM content loaded to make sure button is already loaded
+            document.addEventListener("DOMContentLoaded", function() {
+
+                let myButton = document.getElementById("myButton");
+                myButton.addEventListener("click", function() {
+                    myFunction();
+                });
+
+            });
+
+            function myFunction() {
+                alert("Hello Javascript from tag head");
+            }
+        </script>
+        <!-- end insert javascript in tag head -->
+    </head>
+    <body>
+
+        <button id="myButton">Call Javascript from head</button>
+        <br>
+        <button id="myButtonTwo">Call Javascript from body</button>
+       
+        <!-- start insert javascript in tag body -->
+        <script>
+            let myButtonFromBody = document.getElementById("myButtonTwo");
+            myButtonFromBody.addEventListener("click", function() {
+                myFunctionFromBody();
+            });
+            
+            function myFunctionFromBody() {
+                alert("Hello Javascript from tag body");
+            }
+        </script>
+        <!-- end insert javascript in tag body -->
+    </body>
+ </html>
