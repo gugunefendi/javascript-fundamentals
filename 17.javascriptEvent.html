@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="myButton">Button</button>
+    <div id="showText"></div>
+
+    <input type="text" id="username">
+
+    <!-- 
+        Javascript Event
+        1. onclick
+        2. onmouseover
+        3. onmouseout
+        4. onkeydown
+        5. onkeyup
+        6. onkeypress
+        7. onload
+        8. onunload
+        9. onblur
+        10. onfocus
+        11. onchange
+        12. input
+    -->
+    <script>
+        let button = document.getElementById("myButton");
+        let showText = document.getElementById("showText");
+        let username = document.getElementById("username");
+        let count = 0;
+
+        // event click
+        button.addEventListener("click", function() {
+            showText.innerHTML = count === 0 ? count = 1 : count++;
+        });
+
+        // event input
+        username.addEventListener("input", function() {
+            let nameInputted = username.value;
+            showText.innerHTML = "Inputted: " + nameInputted;
+        });
+    </script>
+</body>
+</html>
